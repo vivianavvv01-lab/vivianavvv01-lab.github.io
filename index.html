@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pardo Cafetería </title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top pardo-navbar">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="Img1.png" alt="Pardo Cafetería Logo" class="logo-img me-2">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">GALERÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CARRUSEL PRINCIPAL  -->
+    <main>
+        <div id="pardoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#pardoCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Diapositiva 1"></button>
+                <button type="button" data-bs-target="#pardoCarousel" data-bs-slide-to="1"
+                    aria-label="Diapositiva 2"></button>
+                <button type="button" data-bs-target="#pardoCarousel" data-bs-slide-to="2"
+                    aria-label="Diapositiva 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="hero-slide" style="background-image: url('img5.jpg');">
+                        <div class="hero-overlay"></div>
+
+                        <div class="container position-relative text-white h-100 d-flex align-items-center">
+                            <div class="col-lg-8">
+                                <h1 class="hero-title fw-bold display-3">Bienvenido a <span
+                                        class="text-pardo-highlight">Pardo Cafetería</span></h1>
+                                <p class="hero-subtitle lead mb-4">El verdadero aroma del café de especialidad, tostado
+                                    a la perfección y servido con pasión en cada taza.</p>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a href="servicios.html" class="btn btn-pardo-primary btn-lg">Ver Menú</a>
+                                    <a href="contacto.html" class="btn btn-pardo-secondary btn-lg">Contáctanos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background-image: url('Img4.jpg');">
+                        <div class="hero-overlay"></div>
+                        <div class="container position-relative text-white h-100 d-flex align-items-center">
+                            <div class="col-lg-8">
+                                <h1 class="hero-title fw-bold display-3">Sabor & <span
+                                        class="text-pardo-highlight">Tradición</span></h1>
+                                <p class="hero-subtitle lead mb-4">Acompaña tu café favorito con nuestra repostería
+                                    artesanal horneada cada mañana.</p>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a href="galeria.html" class="btn btn-pardo-primary btn-lg">Explorar Galería</a>
+                                    <a href="nosotros.html" class="btn btn-pardo-secondary btn-lg">Conócenos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background-image: url('Img3.jpg');">
+                        <div class="hero-overlay"></div>
+                        <div class="container position-relative text-white h-100 d-flex align-items-center">
+                            <div class="col-lg-8">
+                                <h1 class="hero-title fw-bold display-3">Momentos <span
+                                        class="text-pardo-highlight">Únicos</span></h1>
+                                <p class="hero-subtitle lead mb-4">Un espacio acogedor diseñado para trabajar, relajarte
+                                    o compartir con amigos.</p>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a href="contacto.html" class="btn btn-pardo-primary btn-lg">Reservar Mesa</a>
+                                    <a href="servicios.html" class="btn btn-pardo-secondary btn-lg">Promociones</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#pardoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pardoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+
+        </div>
+
+
+
+        <!-- SECCIÓN DE ESTADÍSTICAS -->
+        <section class="stats-section py-5">
+            <div class="container">
+                <div class="row text-center g-4">
+
+                    <div class="col-6 col-md-3">
+                        <i class="bi bi-cup-hot-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="12" data-suffix="+">0</h3>
+                        <p class="stat-label">Años de experiencia</p>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <i class="bi bi-emoji-smile-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="8500" data-suffix="+">0</h3>
+                        <p class="stat-label">Clientes felices</p>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <i class="bi bi-basket3-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="30" data-suffix="+">0</h3>
+                        <p class="stat-label">Variedades de café</p>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <i class="bi bi-star-fill stat-icon"></i>
+                        <h3 class="stat-number" data-target="4.9" data-suffix="" data-decimals="1">0</h3>
+                        <p class="stat-label">Calificación promedio</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+   <!-- SECCIÓN: DEL GRANO A TU TAZA -->
+<section class="grano-section py-5">
+    <div class="container text-center mb-5">
+        <h2 class="grano-titulo">Del Grano a tu Taza</h2>
+        <p class="grano-subtitulo">Conoce cada etapa del café y descubre todo lo que tenemos para ofrecerte</p>
+    </div>
+
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-6 col-md-3">
+                <div class="grano-card" data-bs-toggle="modal" data-bs-target="#modalInfoCafe">
+                    <img src="siembra.png" alt="Siembra">
+                    <div class="grano-overlay">
+                        <h5 class="grano-nombre">Historia del cafe</h5>
+                        <button type="button" class="btn-grano-cta"> MÁS INFORMACIÓN</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="grano-card" data-bs-toggle="modal" data-bs-target="#modalInfoCafe">
+                    <img src="planta.png" alt="Planta">
+                    <div class="grano-overlay">
+                        <h5 class="grano-nombre">Proceso del Cafe</h5>
+                        <button type="button" class="btn-grano-cta">MÁS INFORMACIÓN</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="grano-card" data-bs-toggle="modal" data-bs-target="#modalInfoCafe">
+                    <img src="cosecha.png" alt="Cosecha">
+                    <div class="grano-overlay">
+                        <h5 class="grano-nombre">Nuestros Productos</h5>
+                        <button type="button" class="btn-grano-cta">MÁS INFORMACIÓN</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="grano-card" data-bs-toggle="modal" data-bs-target="#modalInfoCafe">
+                    <img src="cafe.png" alt="Café">
+                    <div class="grano-overlay">
+                        <h5 class="grano-nombre">Cursos de Barismo</h5>
+                        <button type="button" class="btn-grano-cta">MÁS INFORMACIÓN</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- SECCIÓN: CONOCE MÁS SOBRE PARDO CAFETERÍA -->
+<section class="videos-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="grano-titulo">Conoce más sobre Pardo Cafetería</h2>
+            <p class="grano-subtitulo mx-auto">
+                Desde el cuidado en la selección de nuestros granos hasta el proceso de tostado artesanal,
+                cada detalle está pensado para ofrecerte una experiencia única en cada taza. Descubre en estos
+                videos la historia detrás de Pardo Cafetería y por qué nuestros clientes vuelven una y otra vez.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="video-placeholder">
+                    <div class="video-placeholder-icon">
+                        <i class="bi bi-exclamation-lg"></i>
+                    </div>
+                    <div class="video-placeholder-text">
+                        <a href="#" class="video-placeholder-link">Mirar el video en YouTube</a>
+                        <p class="video-placeholder-error">Error 153</p>
+                        <p class="video-placeholder-desc">Error de configuración del reproductor de video</p>
+                    </div>
+                    <button type="button" class="video-play-btn">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="video-placeholder">
+                    <div class="video-placeholder-icon">
+                        <i class="bi bi-exclamation-lg"></i>
+                    </div>
+                    <div class="video-placeholder-text">
+                        <a href="#" class="video-placeholder-link">Mirar el video en YouTube</a>
+                        <p class="video-placeholder-error">Error 153</p>
+                        <p class="video-placeholder-desc">Error de configuración del reproductor de video</p>
+                    </div>
+                    <button type="button" class="video-play-btn">
+                        <i class="bi bi-play-fill"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+  
+    </main>
+
+
+<!-- MODAL: SOLICITAR INFORMACIÓN -->
+<div class="modal fade" id="modalInfoCafe" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    <i class="bi bi-cup-hot-fill me-2 text-pardo-highlight"></i>Solicítanos información
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p class="small text-muted mb-3">
+                    Cuéntanos qué te gustaría saber y un miembro de nuestro equipo te contactará pronto.
+                </p>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Correo</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">¿Sobre qué tema deseas información?</label>
+                        <select class="form-select" required>
+                            <option value="" selected disabled>Selecciona una opción</option>
+                            <option>Origen del café</option>
+                            <option>Nuestros productos</option>
+                            <option>Visitas y eventos</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-control" rows="1" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-pardo-primary w-100">Enviar solicitud</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    
+<footer class="pardo-footer pt-5 pb-4">
+    <div class="container text-center">
+        <a href="index.html" class="footer-logo-link">
+            <img src="Img1.png" alt="Pardo Cafetería" class="footer-logo-img">
+        </a>
+
+        <p class="footer-tagline">El verdadero aroma del café de especialidad, en cada taza.</p>
+
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+
+        <hr class="footer-divider">
+
+        <p class="footer-copy mb-0">&copy; 2026 Pardo Cafetería. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<button type="button" id="btnSubirArriba" aria-label="Subir arriba">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+
+
+
+    <!-- LIBRERÍAS JS (jQuery, Bootstrap y JS propio) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
