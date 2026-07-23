@@ -593,8 +593,16 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    .mv-section {
+        flex-direction: column;
+    }
+
     .mv-text {
         padding: 50px 30px;
+    }
+
+    .mv-img {
+        min-height: 280px;
     }
 
     .mv-titulo {
