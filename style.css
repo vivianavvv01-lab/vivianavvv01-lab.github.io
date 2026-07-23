@@ -462,7 +462,6 @@ footer a:hover {
 }
 
 /* NOSOTROS */
-
 .about {
     display: flex;
     align-items: center;
@@ -473,13 +472,11 @@ footer a:hover {
     margin: 100px auto;
     padding: 0 40px;
 }
-
 .about-container {
     display: flex;
     align-items: center;
     gap: 50px;
 }
-
 .about-img {
     flex: 1;
 }
@@ -488,28 +485,54 @@ footer a:hover {
     max-width: 900px;
     border-radius: 10px;
 }
-
 .about-text {
     max-width: 600px;
     flex: 1;
 }
-
 .about-subtitle {
     color: #6b3e2e;
     font-weight: bold;
     letter-spacing: 2px;
 }
-
 .about-title {
     font-size: 45px;
     margin: 10px 0 20px;
 }
-
 .about-text p {
     color: #555;
     line-height: 1.7;
     margin-bottom: 15px;
 }
+
+@media (max-width: 768px) {
+    .about,
+    .about-container {
+        flex-direction: column;
+        padding: 0 20px;
+        margin: 60px auto;
+        gap: 30px;
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-text {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .about-title {
+        font-size: 32px;
+    }
+}
+
+
+
+
+
+
 
 /* 
    12. MISIÓN Y VISIÓN
